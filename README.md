@@ -20,5 +20,6 @@ if(serialOpen(&port)!=0){
 serialFlushRX(&port);
 
 serialPuts(&port, (const char *) "\r\n");
+
 serialReadBytes(&port,(char*)rx_buff,100,1000) ;
 
